@@ -1,0 +1,32 @@
+.container-hero {
+  @include displayFlexCenter(space-between);
+  height: 100vh;
+}
+
+.hero__block {
+  @include displayFlexCenter(center, start);
+  flex-direction: column;
+  gap: 12px;
+  &__title {
+    padding: 70px 0px;
+    width: 100%;
+    font-size: 56px;
+  }
+  &__subtitle {
+    font-size: 32px;
+    font-weight: 600;
+    padding: 20px 0px;
+  }
+  &__list {
+    padding-top: 30px;
+    @include displayFlexCenter(space-between, start);
+    width: 700px;
+    &__item {
+      @include displayFlexCenter;
+      border-radius: 20px;
+      width: 150px;
+      height: 80px;
+      background-color: $primary-color;
+    }
+  }
+}

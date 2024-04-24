@@ -1,0 +1,23 @@
+.header-wrap {
+  @include displayFlexCenter(space-between);
+}
+
+.header {
+  padding: 20px 0;
+  &__navigation__list {
+    @include displayFlexCenter(space-around);
+    background-color: $primary-color;
+    width: 700px;
+    height: 40px;
+    border-radius: 30px;
+    gap: 16px;
+  }
+}
+
+.block-cv {
+  @include displayFlexCenter;
+  background-color: $primary-color;
+  border-radius: 30px;
+  width: 140px;
+  height: 40px;
+}

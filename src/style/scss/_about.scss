@@ -1,0 +1,71 @@
+.container-about {
+  height: 100vh;
+  @include displayFlexCenter(start, flex-start);
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+.about-title {
+  padding-bottom: 90px;
+  align-self: center;
+  font-size: 28px;
+}
+
+.about-list {
+  @include displayFlexCenter(space-between, start);
+  flex-direction: column;
+  height: 600px;
+
+  &__item {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+
+    &__about-icon {
+      width: 60px;
+      height: 60px;
+      background-color: $primary-color;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-inner {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: $react-color;
+        border-radius: 50%;
+        animation: shadow-pulse 2s infinite;
+      }
+    }
+
+    &__wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-sizing: border-box;
+      width: 90%;
+      height: 100%;
+      border-radius: 30px;
+      padding: 10px 20px;
+      background-color: $primary-color;
+      &__text {
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+@keyframes shadow-pulse {
+  0% {
+    box-shadow: 0px 0px 40px 5px $react-color;
+  }
+  50% {
+    box-shadow: 0px 0px 70px 5px $react-color;
+  }
+  100% {
+    box-shadow: 0px 0px 40px 5px $react-color;
+  }
+}
