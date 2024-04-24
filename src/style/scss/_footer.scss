@@ -1,0 +1,25 @@
+.container-footer {
+  @include displayFlexCenter();
+  padding: 20px;
+  margin-bottom: 20px;
+  height: 40px;
+  background-color: $primary-color;
+  border-radius: 30px;
+}
+
+.footer-list {
+  @include displayFlexCenter();
+  gap: 8px;
+  &__item {
+    @include displayFlexCenter;
+    border-radius: 20px;
+    width: 150px;
+    height: 20px;
+    background-color: #494949;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #676767;
+    }
+  }
+}

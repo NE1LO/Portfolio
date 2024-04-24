@@ -13,6 +13,46 @@
     height: 40px;
     border-radius: 30px;
     gap: 16px;
+    &__item {
+      &__link {
+        position: relative;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 2px;
+          background-color: $react-color;
+          transition: 0.3s ease;
+        }
+        &::after {
+          content: "";
+          position: absolute;
+          top: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 2px;
+          background-color: $react-color;
+          transition: 0.3s ease;
+        }
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+          &::after {
+            width: 100%;
+          }
+        }
+        &:focus {
+          &::before {
+            height: 4px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -20,4 +60,42 @@
   @include displayFlexCenter;
   width: 140px;
   height: 40px;
+  &__link {
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: $react-color;
+      transition: 0.3s ease;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: $react-color;
+      transition: 0.3s ease;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+      &::after {
+        width: 100%;
+      }
+    }
+    &:focus {
+      &::before {
+        height: 4px;
+      }
+    }
+  }
 }
