@@ -8,28 +8,26 @@
 .projects-title {
   align-self: center;
   font-size: 28px;
+  padding: 70px 0px;
 }
 
-.swiper {
-  width: 1100px;
-  height: 850px;
-
-  --swiper-navigation-color: $primary-color;
-}
-
-.swiper-content-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: $primary-color;
-  border-radius: 30px;
-  width: 1000px;
-  height: 700px;
-  //   &__text {
-  //   }
-  //   &__img {
-  //     width: 400px;
-  //     height: 200px;
-  //   }
+.projects-list {
+  width: 100%;
+  &__item {
+    @include displayFlexCenter(space-between);
+    &__wrap {
+      &__title {
+        font-size: 42px;
+        margin-bottom: 20px;
+      }
+      &__subtitle {
+        font-size: 22px;
+        margin-bottom: 20px;
+      }
+      &__text {
+        width: 500px;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
