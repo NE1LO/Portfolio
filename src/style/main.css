@@ -292,7 +292,6 @@ button {
 }
 
 .container-projects {
-  height: 100vh;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -313,18 +312,44 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 90px;
+}
+.projects-list__item__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  width: 700px;
+  height: 500px;
 }
 .projects-list__item__wrap__title {
   font-size: 42px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .projects-list__item__wrap__subtitle {
   font-size: 22px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .projects-list__item__wrap__text {
-  width: 500px;
-  margin-bottom: 20px;
+  width: 700px;
+  margin-bottom: 10px;
+}
+.projects-list__item__wrap__tool {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  max-width: 700px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.projects-list__item__wrap__tool__span {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #00a3ff;
+  transition: 0.5s;
+}
+.projects-list__item__wrap__tool__span:hover {
+  background-color: #0080ff;
 }
 
 .container-footer {
