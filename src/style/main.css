@@ -174,7 +174,7 @@ button {
   align-items: start;
   width: 700px;
 }
-.hero__block__list__item {
+.hero__block__list__item__link {
   display: flex;
   justify-content: center;
   align-items: center;

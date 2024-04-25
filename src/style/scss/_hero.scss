@@ -22,11 +22,13 @@
     @include displayFlexCenter(space-between, start);
     width: 700px;
     &__item {
-      @include displayFlexCenter;
-      border-radius: 20px;
-      width: 150px;
-      height: 80px;
-      background-color: $primary-color;
+      &__link {
+        @include displayFlexCenter;
+        border-radius: 20px;
+        width: 150px;
+        height: 80px;
+        background-color: $primary-color;
+      }
     }
   }
 }
