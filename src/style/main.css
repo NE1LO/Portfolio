@@ -364,10 +364,6 @@ button {
   padding: 10px;
   border-radius: 10px;
   background-color: #00a3ff;
-  transition: 0.5s;
-}
-.projects-list__item__wrap__tool__span:hover {
-  background-color: #0080ff;
 }
 
 .container-footer {
@@ -376,7 +372,7 @@ button {
   align-items: center;
   padding: 20px;
   margin-bottom: 20px;
-  height: 40px;
+  height: 120px;
   background-color: #353535;
   border-radius: 30px;
 }
@@ -385,18 +381,11 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
-.footer-list__item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  width: 150px;
-  height: 20px;
-  background-color: #494949;
-  transition: 0.5s;
+.footer-list__item__link {
+  transition: 0.25s;
 }
-.footer-list__item:hover {
-  background-color: #676767;
+.footer-list__item__link:hover {
+  color: #00a3ff;
 }/*# sourceMappingURL=main.css.map */
