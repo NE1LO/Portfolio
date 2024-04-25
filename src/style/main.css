@@ -314,6 +314,16 @@ button {
   align-items: center;
   margin-bottom: 90px;
 }
+.projects-list__item__link__img {
+  opacity: 0.7;
+  border-radius: 10px;
+  transition: 0.25s;
+  box-shadow: 3px 3px 0px 1px #00a3ff;
+}
+.projects-list__item__link__img:hover {
+  opacity: 1;
+  box-shadow: 3px 3px 0px 2px #00a3ff;
+}
 .projects-list__item__wrap {
   display: flex;
   justify-content: space-between;
@@ -325,6 +335,14 @@ button {
 .projects-list__item__wrap__title {
   font-size: 42px;
   margin-bottom: 10px;
+}
+.projects-list__item__wrap__link {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+.projects-list__item__wrap__link:hover {
+  color: #00a3ff;
 }
 .projects-list__item__wrap__subtitle {
   font-size: 22px;

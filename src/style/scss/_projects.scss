@@ -15,6 +15,19 @@
   &__item {
     @include displayFlexCenter(space-between);
     margin-bottom: 90px;
+
+    &__link {
+      &__img {
+        opacity: 0.7;
+        border-radius: 10px;
+        transition: 0.25s;
+        box-shadow: 3px 3px 0px 1px $react-color;
+        &:hover {
+          opacity: 1;
+          box-shadow: 3px 3px 0px 2px $react-color;
+        }
+      }
+    }
     &__wrap {
       @include displayFlexCenter(space-between, start);
       flex-direction: column;
@@ -23,6 +36,14 @@
       &__title {
         font-size: 42px;
         margin-bottom: 10px;
+      }
+      &__link {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        &:hover {
+          color: $react-color;
+        }
       }
       &__subtitle {
         font-size: 22px;
