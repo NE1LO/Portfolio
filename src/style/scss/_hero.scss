@@ -28,6 +28,10 @@
         width: 150px;
         height: 80px;
         background-color: $primary-color;
+        transition: 0.2s;
+        &:hover {
+          box-shadow: 8px 5px 1px $react-color;
+        }
       }
     }
   }
