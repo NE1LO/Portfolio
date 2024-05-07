@@ -445,7 +445,7 @@ button {
 
 @media screen and (min-width: 320px) and (max-width: 375px) {
   .container-skills {
-    height: 400px;
+    height: 500px;
     display: flex;
     justify-content: start;
     align-items: center;
